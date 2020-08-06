@@ -11,6 +11,11 @@
   "lint-staged" : {
     "src/**/*": "yarn lint --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "next": "9.5.1",
     "react": "16.13.1",
